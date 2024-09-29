@@ -262,13 +262,13 @@ const HomePage = () => {
                         : "flex flex-col justify-center items-center text-center"
                 }
             >
-                <header className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-8 m-auto">
+                <header className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8 m-auto">
                     <div className="">
                         <div className="relative">
                             <img
                                 src={fotoMyS}
                                 alt="fotoMyS"
-                                className="rounded-[150px] sm:h-[30vh] md:h-[30vh] lg:h-[70vh] object-cover"
+                                className="rounded-[150px] sm:h-[30vh] md:h-[40vh] lg:h-[70vh] object-cover"
                             />
                         </div>
                     </div>
@@ -324,14 +324,18 @@ const HomePage = () => {
                 </div>
                 <section id="details" className="mb-12 text-center">
                     <h2 className="text-3xl text-gray-600 mb-6">SÓLO FALTAN</h2>
-                    <div className="text-6xl lg:text-8xl flex justify-center space-x-7 bg-white rounded-3xl shadow-lg max-w-[850px] mx-auto">
+                    <div className="text-5xl md:text-8xl flex justify-center space-x-7 bg-white rounded-3xl shadow-lg max-w-[850px] mx-auto">
                         <div className="p-7 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.days || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">DÍAS</div>
+                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                                DÍAS
+                            </div>
                         </div>
                         <div className="p-7 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.hours || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">HORAS</div>
+                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                                HORAS
+                            </div>
                         </div>
                         <div className="p-7 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.minutes || "0"}</span>
@@ -368,7 +372,7 @@ const HomePage = () => {
                                 <p className="mt-14 font-black">
                                     <a
                                         href="https://maps.app.goo.gl/b71PGVQVL8afEADi8"
-                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
+                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto whitespace-nowrap"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -395,7 +399,7 @@ const HomePage = () => {
                                 <p className="mt-14 font-black">
                                     <a
                                         href="https://maps.app.goo.gl/kqs1bh2s3g13BN5g6"
-                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
+                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -430,7 +434,7 @@ const HomePage = () => {
                                 <p className="mt-14">
                                     Por transferencia a MercadoPago
                                 </p>
-                                <div className="mt-14 flex items-center justify-center">
+                                <div className="mt-14 flex items-center justify-center whitespace-nowrap">
                                     <p>Enviar comprobante al (362) 456-2484</p>
 
                                     <button
@@ -486,13 +490,13 @@ const HomePage = () => {
                                     className="object-cover animate-pulse"
                                 />
                             </div>
-                            <ul className="list-disc list-inside md:text-3xl sm :text-3xl text-9xl text-center text-gray-600">
+                            <ul className="list-disc list-inside md:text-3xl sm:text-3xl text-5xl text-center text-gray-600">
                                 <p className="mt-14 mb-10">
                                     El menú está contemplado en el costo de la
                                     tarjeta y... ¡HAY BARRA LIBRE!
                                 </p>
-                                <div className="mb-12 grid grid-cols-2 gap-0 max-w-full">
-                                    <div>
+                                <div className="mb-12 grid grid-cols-2 gap-0 max-w-full justify-center items-center">
+                                    <div className="flex justify-center">
                                         <button
                                             className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center me-2 mb-2 mx-auto text-6xl font-black"
                                             onClick={openMenu}
@@ -528,7 +532,7 @@ const HomePage = () => {
                         className="object-cover animate-pulse"
                     />
                 </div>
-                <section className="mb-12 grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
+                <section className="mb-12 grid md:grid-cols-2 sm:grid-cols-1 gap-8">
                     <div>
                         <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg w-full mx-auto pb-6">
                             <div className="m-4">
@@ -543,7 +547,7 @@ const HomePage = () => {
                                     <p className="md:text-2xl sm:text-2xl text-5xl font-black mb-2 text-gray-800 text-center whitespace-nowrap">
                                         ELEGANTE RIGUROSO
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         En el caso de los chicos, pueden optar
                                         por trajes de cualquier color
                                     </p>
@@ -553,7 +557,7 @@ const HomePage = () => {
                                             BLANCO, crema, rosa claro.
                                         </span>
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         A elección de cada uno si quiere usar
                                         corbata, moño,
                                     </p>
@@ -579,7 +583,7 @@ const HomePage = () => {
                                     <p className="md:text-2xl sm:text-2xl text-5xl font-black mb-2 text-gray-800 text-center whitespace-nowrap">
                                         ELEGANTE RIGUROSO
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         Las chicas, siempre diosas, pueden ir
                                         como quieran.
                                     </p>
@@ -595,7 +599,7 @@ const HomePage = () => {
                                             Evitar también colores similares.
                                         </span>
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-4 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-4 text-gray-600 text-center break-words whitespace-normal">
                                         Además de sandalias, llevar zapatillas
                                         para bailar más cómodas.
                                     </p>
@@ -613,7 +617,7 @@ const HomePage = () => {
                     />
                 </div>
                 <section className="mb-8 mt-8 text-center">
-                    <div className="relative text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full max-w-32 mx-auto min-w-[700px]">
+                    <div className="relative text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full mx-auto max-w-[850px]">
                         <div className="m-4">
                             <div className="flex justify-center items-center max-w-32 mx-auto">
                                 <img
@@ -622,11 +626,11 @@ const HomePage = () => {
                                     className="object-cover animate-pulse mb-4"
                                 />
                             </div>
-                            <p className="md:text-3xl sm:text-3xl text-6xl font-black mb-6 text-gray-200">
+                            <p className="md:text-3xl sm:text-2xl text-6xl font-black mb-6 text-gray-200">
                                 Responder lo antes posible
                             </p>
                             <button
-                                className="text-gray-700 bg-gradient-to-br from-gray-300 to-gray-100 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-gray-500 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center me-2 mb-2 mx-auto text-6xl font-black"
+                                className="text-gray-700 bg-gradient-to-br from-gray-300 to-gray-100 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-gray-500 rounded-lg md:text-3xl sm:text-2xl px-5 py-2.5 text-center me-2 mb-2 mx-auto text-6xl font-black"
                                 onClick={openForm}
                             >
                                 Formulario de asistencia
@@ -647,7 +651,7 @@ const HomePage = () => {
                     />
                 </div>
                 <section className="mb-8 mt-8 text-center">
-                    <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full max-w-32 mx-auto min-w-[700px] pb-4">
+                    <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full mx-auto max-w-[850px] pb-4">
                         <div className="m-4">
                             <div className="flex justify-center items-center max-w-32 mx-auto">
                                 <img
@@ -656,7 +660,7 @@ const HomePage = () => {
                                     className="object-cover animate-pulse mb-4"
                                 />
                             </div>
-                            <p className="md:text-3xl sm:text-3xl text-6xl font-black mb-6 text-gray-600">
+                            <p className="md:text-3xl sm:text-2xl text-6xl font-black mb-6 text-gray-600">
                                 Compartí cada momento con nosotros, usando
                                 nuestro hashtag
                             </p>
@@ -665,7 +669,7 @@ const HomePage = () => {
                             </p>
                             <button
                                 onClick={handleCopy}
-                                className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
+                                className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
                             >
                                 #MauroyShei
                             </button>
@@ -685,7 +689,7 @@ const HomePage = () => {
                     />
                 </div>
                 <section className="mt-8 text-center">
-                    <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full max-w-32 mx-auto min-w-[700px] pb-4">
+                    <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full mx-auto max-w-[850px] pb-4">
                         <div className="m-4">
                             <div className="flex justify-center items-center max-w-32 mx-auto">
                                 <img
@@ -695,7 +699,7 @@ const HomePage = () => {
                                 />
                             </div>
                             <div className="space-x-4">
-                                <p className="md:text-2xl sm:text-2xl text-6xl font-black mb-6 text-gray-600 text-center whitespace-nowrap">
+                                <p className="md:text-2xl sm:text-xl text-6xl font-black mb-6 text-gray-600 text-center whitespace-nowrap">
                                     ¡Agregá el evento a tu calendario para no
                                     olvidarte!
                                 </p>
@@ -703,14 +707,14 @@ const HomePage = () => {
                                     href={googleCalendarLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 md:text-2xl sm:text-2xl text-6xl font-black"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 md:text-2xl sm:text-xl text-6xl font-black"
                                 >
                                     Google Calendar
                                 </a>
                                 <a
                                     href={appleCalendarLink}
                                     rel="noopener noreferrer"
-                                    className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 md:text-2xl sm:text-2xl text-6xl font-black"
+                                    className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 md:text-2xl sm:text-xl text-6xl font-black"
                                 >
                                     Apple Calendar
                                 </a>
@@ -731,7 +735,7 @@ const HomePage = () => {
             </div>
             <footer className="bg-gray-100 text-gray-700 py-6 lg:py-3 mt-10 relative">
                 <div className="max-w-screen-xl mx-auto text-center">
-                    <p className="lg:text-lg text-4xl mb-2 ">
+                    <p className="lg:text-lg text-2xl mb-4">
                         ¿Te gustó lo que ves? <br />
                         <span className="font-semibold lg:text-sm text-2xl">
                             Crea una experiencia única para tu evento

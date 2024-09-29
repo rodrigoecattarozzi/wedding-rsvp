@@ -43,17 +43,17 @@ const MusicPlayer = () => {
     }, []);
 
     return (
-        <div className="fixed top-16 right-4 z-40 lg:text-lg text-3xl">
+        <div className="fixed top-16 right-4 z-40 sm:text-lg text-3xl">
             <div className="relative">
                 <button
                     onClick={togglePlay}
-                    className="bg-fuchsia-700 text-white lg:p-2 p-4 rounded-lg shadow-lg focus:outline-none opacity-75 hover:opacity-100"
+                    className="bg-fuchsia-700 text-white md:p-2 p-4 rounded-lg shadow-lg focus:outline-none opacity-75 hover:opacity-100"
                 >
                     {isPlaying ? "Pausar" : "Reproducir"}
                 </button>
                 {showHint && (
                     <div className="absolute right-full top-[50%] transform -translate-y-1/2 mr-2 flex items-center animate-fade-in-out">
-                        <span className="bg-white text-gray-700 p-2 rounded-lg shadow-lg lg:text-lg text-3xl text-center whitespace-nowrap">
+                        <span className="bg-white text-gray-700 p-2 rounded-lg shadow-lg sm:text-lg text-3xl text-center whitespace-nowrap">
                             ¡Hacé clic para escuchar!
                         </span>
                         <div className="ml-1 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-white"></div>

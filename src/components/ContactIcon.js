@@ -75,17 +75,17 @@ const ContactIcon = () => {
                         </button>
                         <div className="container py-12 px-4">
                             <div className="m-4 mb-1">
-                                <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
+                                <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                     Datos de{" "}
                                     <mark className="px-2 text-white bg-fuchsia-900 rounded">
                                         contacto
                                     </mark>
                                 </h1>
-                                <p className="p-2 text-gray-500 lg:text-xl md:text-2xl text-5xl font-bold">
+                                <p className="p-2 text-gray-500 md:text-xl sm:text-2xl text-5xl font-bold">
                                     Si tenés alguna duda, por favor escribinos
                                     para que podamos ayudarte
                                 </p>
-                                <p className="p-2 text-gray-500 lg:text-base md:text-xl text-5xl font-bold py-4">
+                                <p className="p-2 text-gray-500 md:text-base sm:text-xl text-5xl font-bold py-4">
                                     Pista: podés copiar los números haciendo
                                     click sobre los mismos
                                 </p>
@@ -114,12 +114,12 @@ const ContactIcon = () => {
                                                         "mauro"
                                                     )
                                                 }
-                                                className="lg:text-3xl text-4xl font-semibold cursor-pointer"
+                                                className="md:text-3xl text-4xl font-semibold cursor-pointer"
                                             >
                                                 (362) 456 2428
                                             </span>
                                         </div>
-                                        <div className="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                        <div className="pl-7 md:text-2xl text-3xl text-gray-400">
                                             <p>Mauro</p>
                                         </div>
                                     </li>
@@ -147,12 +147,12 @@ const ContactIcon = () => {
                                                         "sheila"
                                                     )
                                                 }
-                                                className="lg:text-3xl text-4xl font-semibold cursor-pointer"
+                                                className="md:text-3xl text-4xl font-semibold cursor-pointer"
                                             >
                                                 (362) 438 7493
                                             </span>
                                         </div>
-                                        <div className="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                        <div className="pl-7 md:text-2xl text-3xl text-gray-400">
                                             <p>Sheila</p>
                                         </div>
                                     </li>

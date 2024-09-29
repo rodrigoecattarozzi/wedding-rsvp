@@ -58,13 +58,13 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                 <div className="container py-12 px-4">
                     <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden min-w-[500px]">
                         <div className="m-4 mb-1">
-                            <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
+                            <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                 Completá tus{" "}
                                 <mark className="px-2 text-white bg-fuchsia-900 rounded">
                                     datos
                                 </mark>
                             </h1>
-                            <p className="p-2 text-gray-500 lg:text-base md:text-xl text-5xl font-bold">
+                            <p className="p-2 text-gray-500 lg:text-base sm:text-xl text-5xl font-bold">
                                 Por favor, revisá la información antes de
                                 enviarla
                             </p>
@@ -80,7 +80,7 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                         })}
                                         id="name"
                                         className="block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:ring-0 focus:border-fuchsia-900 focus:ring-fuchsia-900 focus:outline-fuchsia-900 peer
-                                        mt-1 shadow-sm md:text-3xl text-6xl font-black"
+                                        mt-1 shadow-sm sm:text-3xl text-6xl font-black"
                                         placeholder=" "
                                     />
                                     {errors.name && (
@@ -90,11 +90,11 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                     )}
                                     <label
                                         htmlFor="name"
-                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 md:text-xl text-6xl"
+                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 sm:text-xl text-6xl"
                                     >
                                         ¿Cuál es tu nombre?
                                     </label>
-                                    <span className="absolute inset-y-0 right-0 pr-3 pt-2 flex items-center text-fuchsia-600 md:text-3xl text-6xl font-black">
+                                    <span className="absolute inset-y-0 right-0 pr-3 pt-2 flex items-center text-fuchsia-600 sm:text-3xl text-6xl font-black">
                                         *
                                     </span>
                                 </div>
@@ -105,7 +105,7 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                             required: true,
                                         })}
                                         id="email"
-                                        className="block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:ring-0 focus:border-fuchsia-900 focus:ring-fuchsia-900 focus:outline-fuchsia-900 peer mt-1 shadow-sm md:text-3xl text-6xl font-black"
+                                        className="block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:ring-0 focus:border-fuchsia-900 focus:ring-fuchsia-900 focus:outline-fuchsia-900 peer mt-1 shadow-sm sm:text-3xl text-6xl font-black"
                                         placeholder=" "
                                     />
                                     {errors.email && (
@@ -115,11 +115,11 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                     )}
                                     <label
                                         htmlFor="email"
-                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 md:text-xl text-6xl"
+                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 sm:text-xl text-6xl"
                                     >
                                         ¿Cuál es tu e-mail?
                                     </label>
-                                    <span className="absolute inset-y-0 right-0 pr-3 pt-2 flex items-center text-fuchsia-600 md:text-3xl text-6xl font-black">
+                                    <span className="absolute inset-y-0 right-0 pr-3 pt-2 flex items-center text-fuchsia-600 sm:text-3xl text-6xl font-black">
                                         *
                                     </span>
                                 </div>
@@ -127,12 +127,12 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                     <textarea
                                         {...register("diet")}
                                         id="diet"
-                                        className="block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:ring-0 focus:border-fuchsia-900 focus:ring-fuchsia-900 focus:outline-fuchsia-900 peer mt-1 shadow-sm md:text-3xl text-6xl font-black"
+                                        className="block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none focus:ring-0 focus:border-fuchsia-900 focus:ring-fuchsia-900 focus:outline-fuchsia-900 peer mt-1 shadow-sm sm:text-3xl text-6xl font-black"
                                         placeholder=" "
                                     />
                                     <label
                                         htmlFor="diet"
-                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 md:text-xl text-6xl"
+                                        className="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-fuchsia-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 sm:text-xl text-6xl"
                                     >
                                         ¿Tenés alguna restricción alimentaria?
                                     </label>
@@ -145,7 +145,7 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                             className="sr-only peer"
                                         />
                                         <div className="relative w-11 h-6 bg-gray-300 rounded-full peer peer-focus:ring-4 peer-focus:ring-fuchsia-400 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-fuchsia-900"></div>
-                                        <span className="ms-3 text-gray-900 md:text-3xl text-6xl font-black">
+                                        <span className="ms-3 text-gray-900 sm:text-3xl text-6xl font-black">
                                             Confirmo asistencia
                                         </span>
                                     </label>
@@ -158,7 +158,7 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                 <div className="p-2 text-center">
                                     <button
                                         type="submit"
-                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400  rounded-lg px-5 py-2.5 text-center me-2 mb-2 mt-8 mx-auto md:text-3xl text-6xl font-black"
+                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400  rounded-lg px-5 py-2.5 text-center me-2 mb-2 mt-8 mx-auto sm:text-3xl text-6xl font-black"
                                     >
                                         Enviar respuesta
                                     </button>
@@ -168,7 +168,7 @@ const InvitationForm = ({ isOpen, onClose, dinner }) => {
                                         </p>
                                     )}
                                 </div>
-                                <span className="p-2 block text-gray-500 md:text-3xl text-6xl font-black">
+                                <span className="p-2 block text-gray-500 sm:text-3xl text-6xl font-black">
                                     Los campos marcados con{" "}
                                     <mark className="text-fuchsia-600 bg-white">
                                         *

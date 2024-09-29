@@ -8,7 +8,7 @@ export default function ModalMenu({ isOpen, onClose }) {
             onClick={onClose}
         >
             <div
-                className="relative bg-white rounded-lg overflow-hidden items-center justify-center shadow-lg w-full max-w-3xl mx-auto"
+                className="relative bg-white rounded-lg overflow-hidden items-center justify-center shadow-lg w-full max-w-2xl mx-auto"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
@@ -20,7 +20,7 @@ export default function ModalMenu({ isOpen, onClose }) {
                 <div className="container py-12 px-4">
                     <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden min-w-[500px]">
                         <div className="m-4 mb-1">
-                            <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
+                            <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                 <mark className="px-2 text-white bg-fuchsia-900 rounded">
                                     Menú
                                 </mark>{" "}
@@ -44,11 +44,11 @@ export default function ModalMenu({ isOpen, onClose }) {
                                                 d="M1 5.917 5.724 10.5 15 1.5"
                                             />
                                         </svg>
-                                        <span class="lg:text-3xl text-4xl font-semibold">
+                                        <span class="md:text-3xl text-4xl font-semibold">
                                             Bocaditos fríos y calientes
                                         </span>
                                     </div>
-                                    <div class="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                    <div class="pl-7 md:text-2xl text-3xl text-gray-400">
                                         <p>Entrada</p>
                                     </div>
                                 </li>
@@ -69,12 +69,12 @@ export default function ModalMenu({ isOpen, onClose }) {
                                                 d="M1 5.917 5.724 10.5 15 1.5"
                                             />
                                         </svg>
-                                        <span class="lg:text-3xl text-4xl font-semibold">
+                                        <span class="md:text-3xl text-4xl font-semibold">
                                             Medallón de lomo con salsa
                                             Portobelho y milhoja de papas
                                         </span>
                                     </div>
-                                    <div class="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                    <div class="pl-7 md:text-2xl text-3xl text-gray-400">
                                         <p>Plato Principal</p>
                                     </div>
                                 </li>
@@ -95,11 +95,11 @@ export default function ModalMenu({ isOpen, onClose }) {
                                                 d="M1 5.917 5.724 10.5 15 1.5"
                                             />
                                         </svg>
-                                        <span class="lg:text-3xl text-4xl font-semibold">
+                                        <span class="md:text-3xl text-4xl font-semibold">
                                             Copa helada con charlotte de chocolate y frutas de estación
                                         </span>
                                     </div>
-                                    <div class="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                    <div class="pl-7 md:text-2xl text-3xl text-gray-400">
                                         <p>Postre</p>
                                     </div>
                                 </li>
@@ -120,11 +120,11 @@ export default function ModalMenu({ isOpen, onClose }) {
                                                 d="M1 5.917 5.724 10.5 15 1.5"
                                             />
                                         </svg>
-                                        <span class="lg:text-3xl text-4xl font-semibold">
+                                        <span class="md:text-3xl text-4xl font-semibold">
                                             Pernil de ternera en pancitos saborizados
                                         </span>
                                     </div>
-                                    <div class="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                    <div class="pl-7 md:text-2xl text-3xl text-gray-400">
                                         <p>Trasnoche</p>
                                     </div>
                                 </li>
@@ -145,11 +145,11 @@ export default function ModalMenu({ isOpen, onClose }) {
                                                 d="M1 5.917 5.724 10.5 15 1.5"
                                             />
                                         </svg>
-                                        <span class="lg:text-3xl text-4xl font-semibold">
+                                        <span class="md:text-3xl text-4xl font-semibold">
                                             Gaseosa, Cerveza, Vino, Agua (con y sin gas)
                                         </span>
                                     </div>
-                                    <div class="pl-7 lg:text-2xl text-3xl text-gray-400">
+                                    <div class="pl-7 md:text-2xl text-3xl text-gray-400">
                                         <p>Bebidas</p>
                                     </div>
                                 </li>
