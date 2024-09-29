@@ -42,7 +42,6 @@ const HomePageParty = () => {
     const weddingDate = new Date("2024-11-16T21:00:00");
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const [isFormOpen, setIsFormOpen] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDrinksOpen, setIsDrinksOpen] = useState(false);
     const [copied, setCopied] = useState(false);
     const [copiedPhone, setCopiedPhone] = useState(false);
@@ -125,14 +124,6 @@ const HomePageParty = () => {
 
     const closeForm = () => {
         setIsFormOpen(false);
-    };
-
-    const openMenu = () => {
-        setIsMenuOpen(true);
-    };
-
-    const closeMenu = () => {
-        setIsMenuOpen(false);
     };
 
     const openDrinks = () => {
