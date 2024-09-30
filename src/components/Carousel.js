@@ -10,11 +10,11 @@ import "./CarouselStyles.css";
 
 const Carousel = ({ slides }) => {
     return (
-        <div className="relative bg-white rounded-lg overflow-hidden w-full max-w-2xl mx-auto">
+        <div className="relative bg-white rounded-lg overflow-hidden w-full md:max-w-2xl mx-auto">
             <Swiper
                 modules={[Navigation, Pagination, EffectCoverflow]}
                 spaceBetween={25}
-                slidesPerView={3}
+                slidesPerView={1}
                 centeredSlides={true}
                 navigation
                 pagination={{ clickable: true }}
@@ -27,14 +27,14 @@ const Carousel = ({ slides }) => {
                     slideShadows: false,
                 }}
                 loop={true}
-                className="h-80 md:h-96"
+                className="sm:h-80 md:h-96"
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div className="relative h-full">
                             <img
                                 src={slide.src}
-                                className="object-contain w-full h-full"
+                                className="object-contain h-full w-full"
                                 alt={slide.alt}
                             />
                             {slide.text && (

@@ -20,7 +20,7 @@ export default function RequestSongs() {
     };
 
     return (
-        <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full max-w-3xl mx-auto min-w-[600px] pb-2 px-4">
+        <div className="relative bg-white rounded-3xl overflow-hidden items-center justify-center shadow-lg w-full max-w-3xl mx-auto md:min-w-[600px] pb-2 px-4">
             <div className="m-4">
                 <div className="flex justify-center items-center max-w-32 mx-auto">
                     <img

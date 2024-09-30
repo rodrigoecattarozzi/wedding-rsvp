@@ -268,7 +268,7 @@ const HomePage = () => {
                             <img
                                 src={fotoMyS}
                                 alt="fotoMyS"
-                                className="rounded-[150px] sm:h-[30vh] md:h-[40vh] lg:h-[70vh] object-cover"
+                                className="rounded-[150px] sm:h-[45vh] md:h-[55vh] lg:h-[70vh] object-cover"
                             />
                         </div>
                     </div>
@@ -324,28 +324,28 @@ const HomePage = () => {
                 </div>
                 <section id="details" className="mb-12 text-center">
                     <h2 className="text-3xl text-gray-600 mb-6">SÓLO FALTAN</h2>
-                    <div className="text-5xl md:text-8xl flex justify-center space-x-7 bg-white rounded-3xl shadow-lg max-w-[850px] mx-auto">
-                        <div className="p-7 text-gray-600 flex flex-col items-center">
+                    <div className="sm:text-base md:text-8xl text-5xl flex justify-center items-center space-x-7 sm:space-x-[1px] bg-white rounded-3xl shadow-lg max-w-[850px] mx-auto">
+                        <div className="md:p-7 sm:p-3 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.days || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                            <div className="lg:text-2xl sm:text-base md:text-xl">
                                 DÍAS
                             </div>
                         </div>
-                        <div className="p-7 text-gray-600 flex flex-col items-center">
+                        <div className="md:p-7 sm:p-3 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.hours || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                            <div className="lg:text-2xl sm:text-base md:text-xl">
                                 HORAS
                             </div>
                         </div>
-                        <div className="p-7 text-gray-600 flex flex-col items-center">
+                        <div className="md:p-7 sm:p-3 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.minutes || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                            <div className="lg:text-2xl sm:text-base md:text-xl">
                                 MINUTOS
                             </div>
                         </div>
-                        <div className="p-7 text-gray-600 flex flex-col items-center">
+                        <div className="md:p-7 sm:p-3 text-gray-600 flex flex-col items-center">
                             <span>{timeLeft.seconds || "0"}</span>
-                            <div className="lg:text-2xl sm:text-xl md:text-xl">
+                            <div className="lg:text-2xl sm:text-base md:text-xl">
                                 SEGUNDOS
                             </div>
                         </div>
@@ -370,14 +370,15 @@ const HomePage = () => {
                                 </p>
                                 <p className="mt-14 font-black">21:15 HS</p>
                                 <p className="mt-14 font-black">
-                                    <a
-                                        href="https://maps.app.goo.gl/b71PGVQVL8afEADi8"
-                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto whitespace-nowrap"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        PARROQUIA INMACULADA CONCEPCIÓN
-                                    </a>
+                                    <button className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto whitespace-nowrap sm:whitespace-break-spaces">
+                                        <a
+                                            href="https://maps.app.goo.gl/b71PGVQVL8afEADi8"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            PARROQUIA INMACULADA CONCEPCIÓN
+                                        </a>
+                                    </button>
                                 </p>
                             </ul>
                         </div>
@@ -397,14 +398,15 @@ const HomePage = () => {
                                 </p>
                                 <p className="mt-14 font-black">22:30 HS</p>
                                 <p className="mt-14 font-black">
-                                    <a
-                                        href="https://maps.app.goo.gl/kqs1bh2s3g13BN5g6"
-                                        className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        SALÓN "RANCHO DORADO"
-                                    </a>
+                                    <button className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-2xl text-6xl font-black px-5 py-2.5 text-center me-2 mb-2 mx-auto whitespace-nowrap sm:whitespace-break-spaces">
+                                        <a
+                                            href="https://maps.app.goo.gl/kqs1bh2s3g13BN5g6"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            SALÓN "RANCHO DORADO"
+                                        </a>
+                                    </button>
                                 </p>
                             </ul>
                         </div>
@@ -434,7 +436,7 @@ const HomePage = () => {
                                 <p className="mt-14">
                                     Por transferencia a MercadoPago
                                 </p>
-                                <div className="mt-14 flex items-center justify-center whitespace-nowrap">
+                                <div className="mt-14 flex items-center justify-center whitespace-nowrap sm:whitespace-break-spaces">
                                     <p>Enviar comprobante al (362) 456-2484</p>
 
                                     <button
@@ -462,7 +464,7 @@ const HomePage = () => {
                                 />
                             </div>
                             <ul className="list-disc list-inside md:text-3xl sm:text-3xl text-9xl text-center text-gray-600">
-                                <p className="mt-14">
+                                <p className="mt-14 break-words">
                                     CVU: 0000003100071315749735
                                 </p>
                                 <p className="mt-14">Alias: boda.mauyshei</p>
@@ -495,22 +497,24 @@ const HomePage = () => {
                                     El menú está contemplado en el costo de la
                                     tarjeta y... ¡HAY BARRA LIBRE!
                                 </p>
-                                <div className="mb-12 grid grid-cols-2 gap-0 max-w-full justify-center items-center">
-                                    <div className="flex justify-center">
-                                        <button
-                                            className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center me-2 mb-2 mx-auto text-6xl font-black"
-                                            onClick={openMenu}
-                                        >
-                                            Contenido del menú
-                                        </button>
-                                    </div>
-                                    <div>
-                                        <button
-                                            className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center me-2 mb-2 mx-auto text-6xl font-black"
-                                            onClick={openDrinks}
-                                        >
-                                            Tragos en barra
-                                        </button>
+                                <div className="mb-12 max-w-full justify-center items-center">
+                                    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-0">
+                                        <div className="flex justify-center">
+                                            <button
+                                                className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center mb-2 mx-auto text-6xl font-black"
+                                                onClick={openMenu}
+                                            >
+                                                Contenido del menú
+                                            </button>
+                                        </div>
+                                        <div className="flex justify-center">
+                                            <button
+                                                className="text-white bg-gradient-to-br from-fuchsia-900 to-fuchsia-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-fuchsia-400 rounded-lg md:text-3xl sm:text-3xl px-5 py-2.5 text-center mb-2 mx-auto text-6xl font-black"
+                                                onClick={openDrinks}
+                                            >
+                                                Tragos en barra
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <ModalMenu
@@ -551,7 +555,7 @@ const HomePage = () => {
                                         En el caso de los chicos, pueden optar
                                         por trajes de cualquier color
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         excepto{" "}
                                         <span className="text-red-600">
                                             BLANCO, crema, rosa claro.
@@ -587,14 +591,14 @@ const HomePage = () => {
                                         Las chicas, siempre diosas, pueden ir
                                         como quieran.
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         El color{" "}
                                         <span className="text-red-600">
                                             BLANCO
                                         </span>{" "}
                                         está reservado para la novia.
                                     </p>
-                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center whitespace-nowrap">
+                                    <p className="md:text-xl sm:text-2xl text-4xl font-black mb-2 text-gray-600 text-center break-words whitespace-normal">
                                         <span className="text-red-600">
                                             Evitar también colores similares.
                                         </span>
@@ -699,25 +703,27 @@ const HomePage = () => {
                                 />
                             </div>
                             <div className="space-x-4">
-                                <p className="md:text-2xl sm:text-xl text-6xl font-black mb-6 text-gray-600 text-center whitespace-nowrap">
+                                <p className="md:text-2xl sm:text-xl text-6xl font-black mb-6 text-gray-600 text-center break-words whitespace-normal">
                                     ¡Agregá el evento a tu calendario para no
                                     olvidarte!
                                 </p>
-                                <a
-                                    href={googleCalendarLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 md:text-2xl sm:text-xl text-6xl font-black"
-                                >
-                                    Google Calendar
-                                </a>
-                                <a
-                                    href={appleCalendarLink}
-                                    rel="noopener noreferrer"
-                                    className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 md:text-2xl sm:text-xl text-6xl font-black"
-                                >
-                                    Apple Calendar
-                                </a>
+                                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+                                    <a
+                                        href={googleCalendarLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 md:text-2xl sm:text-xl text-6xl font-black"
+                                    >
+                                        Google Calendar
+                                    </a>
+                                    <a
+                                        href={appleCalendarLink}
+                                        rel="noopener noreferrer"
+                                        className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 md:text-2xl sm:text-xl text-6xl font-black"
+                                    >
+                                        Apple Calendar
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
