@@ -17,8 +17,8 @@ export default function ModalMenu({ isOpen, onClose }) {
                 >
                     ✕
                 </button>
-                <div className="container py-12 px-4">
-                    <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden min-w-[500px]">
+                <div className="container py-12 px-4 min-w-[400px]">
+                    <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden">
                         <div className="m-4 mb-1">
                             <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                 <mark className="px-2 text-white bg-fuchsia-900 rounded">

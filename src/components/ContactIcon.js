@@ -65,7 +65,7 @@ const ContactIcon = () => {
                 <div className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-50">
                     <div
                         ref={modalRef}
-                        className="bg-white p-6 rounded-lg shadow-lg relative max-w-md w-full overflow-hidden min-w-[700px]"
+                        className="bg-white p-6 rounded-lg shadow-lg relative max-w-md w-full overflow-hidden min-w-[300px]"
                     >
                         <button
                             className="absolute top-3 right-3 z-50 text-gray-700 hover:text-gray-900"
@@ -73,8 +73,8 @@ const ContactIcon = () => {
                         >
                             ✕
                         </button>
-                        <div className="container py-12 px-4">
-                            <div className="m-4 mb-1">
+                        <div className="container py-12 px-4 min-w-[300px]">
+                            <div className="m-4 mb-1 whitespace-break-spaces">
                                 <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                     Datos de{" "}
                                     <mark className="px-2 text-white bg-fuchsia-900 rounded">

@@ -17,8 +17,8 @@ export default function ModalDrinks({ isOpen, onClose }) {
                 >
                     ✕
                 </button>
-                <div className="container py-12 px-4">
-                    <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden min-w-[500px]">
+                <div className="container py-12 px-4 min-w-[300px]">
+                    <div className="max-w-3xl mx-auto bg-white rounded-lg overflow-hidden">
                         <div className="m-4 mb-1">
                             <h1 className="p-2 mb-3 text-2 font-extrabold leading-none tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                                 Barra de{" "}
@@ -26,7 +26,7 @@ export default function ModalDrinks({ isOpen, onClose }) {
                                     Tragos
                                 </mark>
                             </h1>
-                            <ul class="space-y-4 text-left text-gray-500 max-h-[40rem] overflow-y-auto">
+                            <ul class="space-y-4 text-left text-gray-500 max-h-[40rem] overflow-y-auto whitespace-break-spaces">
                                 <li class="flex flex-col space-y-1 mb-5">
                                     <div class="flex items-center space-x-3">
                                         <svg
